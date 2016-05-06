@@ -1,0 +1,39 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: TRAB3-2
+!!!      Script de teste:     testePecasCapturadas.script
+
+!!!    0  Linha:     1  // Script: TestePecasCapturadas.script 
+!!!    0  Linha:     2  // Autor:  Rodrigo Rangel Vargas dos Santos 
+!!!    0  Linha:     3  // Data : 21/09/2015 
+!!!    0  Linha:     4  // Proposito: Testa a construcao e manipulacao da estrutura Pecas Capturadas, testando completamente 
+!!!    0  Linha:     5  // todas as possiveis e factiveis saidas de suas funcoes. 
+    7  ==CONTAR PECAS EM ESTRUTURA INEXISTENTE
+   10  ==INSERIR PECA EM ESTRUTURA INEXISTENTE
+   13  ==RETIRAR PECA EM ESTRUTURA INEXISTENTE
+   16  ==DESTROI ESTRUTURA INEXISTENTE
+   19  ==CRIA ESTRUTURA OK
+   22  ==CRIA JA EXISTENTE
+   25  ==DESTROI ESTRUTURA CRIADA OK
+   28  ==CRIA ESTRUTURA DENOVO
+   31  ==OBTER QUANTIDADE PECAS OK
+   34  ==INSERIR PECA 1 JOGADOR 1 OK
+   37  ==INSERIR PECA 2 JOGADOR 1 OK
+   40  ==INSERIR PECA 1 JOGADOR 2 OK
+   43  ==INSERIR PECA 2 JOGADOR 2 OK
+   46  ==INSERIR PECA 3 JOGADOR 2 OK
+   49  ==INSERIR PECA COM JOGADOR INVALIDO
+   52  ==CONTAR PECAS JOGADOR 1 OK
+   55  ==CONTAR PECAS JOGADOR 1 ERRADO
+   58  ==CONTAR PECAS JOGADOR 2 OK
+   61  ==CONTAR PECAS JOGADOR 2 ERRADO
+
+!!! Número de linhas lidas:          62
+!!! Número de casos de teste:        19
+!!! Número comandos corretos:        19
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0
