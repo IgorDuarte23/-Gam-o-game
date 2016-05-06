@@ -1,0 +1,139 @@
+// Script: TesteTabuleiro.script
+// Autor:  Igor Duarte Milanez Vieira
+// Data : 21/09/2015
+// Proposito: Testa a construcao e manipulacao de Tabuleiro, testando completamente
+// todas as possiveis e factiveis saidas de suas, menos o retorno CondRetFaltoMemoria, para o caso de faltar memória na
+// função CriarTabuleiro.
+
+==INSERE EM TABULEIRO INEXISTENTE
+=inserepeca 1 1 1 4
+
+==MOVE PECA TABULEIRO INEXISTENTE
+=movepeca 1 1 2 4
+
+==retirapeca
+=retirapeca 1 1 1 4
+
+==QUANTIDADE PECA TABULEIRO INEXISTENTE
+=quantidadepeca 1 1 0 4
+
+==DESTROI TABULEIRO
+=destroitabuleiro 1 4
+
+==CRIAR TABULEIRO
+=criatabuleiro 1 0
+
+==RETIRA CASA INEXISTENTE
+=retirapeca 1 1 30 5
+
+==RETIRA CASA VAZIA
+=retirapeca 1 1 5 1
+
+==CRIA JA EXISTENTE
+=criatabuleiro 1 6
+
+==DESTROI TABULEIRO
+=destroitabuleiro 1 0
+
+==DESTROI INEXISTENTE
+=destroitabuleiro 1 4
+
+==CRIA DENOVO
+=criatabuleiro 1 0
+
+==INSERE PECA 1 CASA 1
+=inserepeca 1 1 1 0
+
+
+==INSERE PECA 2 CASA 1
+=inserepeca 1 2 1 0
+
+==QUANTIDADE PECA ESPERADO ERRADA CASA 1 E TESTO RECUPERAR
+=quantidadepeca 1 1 3 0
+=recuperar
+
+==INSERE PECA 3 CASA 1
+=inserepeca 1 3 1 0
+
+==INSERE PECA 4 CASA 1
+=inserepeca 1 4 1 0
+
+==INSERE PECA 5 CASA 1
+=inserepeca 1 5 1 0
+
+==INSERE PECA 6 CASA 1
+=inserepeca 1 6 1 0
+
+==INSERE PECA 7 CASA 1
+=inserepeca 1 7 1 0
+
+==INSERE PECA 1 CASA 2
+=inserepeca 1 1 2 0
+
+==INSERE PECA 2 CASA 2
+=inserepeca 1 2 2 0
+
+==RETIRA PECA 1 CASA 1 OK
+=retirapeca 1 1 1 0
+
+==QUANTIDADE PECA OK CASA 1 (6 PECAS)
+=quantidadepeca 1 1 6 0
+
+==RETIRA PECA 2 CASA 1 OK
+=retirapeca 1 2 1 0
+
+==QUANTIDADE PECA OK CASA 1 (5 PECAS)
+=quantidadepeca 1 1 5 0
+
+==QUANTIDADE PECA OK CASA 2 (2 PECAS)
+=quantidadepeca 1 2 2 0
+
+==RETIRAPECA PECA 2 CASA 2 OK
+=retirapeca 1 2 2 0
+
+==QUANTIDADE PECA OK CASA 2 (1 PECA)
+=quantidadepeca 1 2 1 0
+
+==RETIRAPECA PECA 1 CASA 2 OK
+=retirapeca 1 1 2 0
+
+==QUANTIDADE CASA VAZIA OK CASA 2 
+=quantidadepeca 1 2 0 1
+
+==QUANTIDADE PECA CASA VAZIA 
+=quantidadepeca 1 3 0 1
+
+==MOVE PECA CASA 1 P/ CASA 3
+=movepeca 1 1 2 0
+
+==MOVE PECA CASA INEXISTENTE
+=movepeca 1 30 2 5
+
+==QUANTIDADE PECA OK CASA 1 (4 PECAS)
+=quantidadepeca 1 1 4 0
+
+==QUANTIDADE PECA OK CASA 3 (1 PECA)
+=quantidadepeca 1 3 1 0
+
+==MOVE PECA CASA 3 P/ CASA 1
+=movepeca 1 3 -2 0
+
+==QUANTIDADE PECA OK CASA 1 (5 PECAS)
+=quantidadepeca 1 1 5 0
+
+==QUANTIDADE PECA CASA 3 VAZIA (0 PECA)
+=quantidadepeca 1 3 0 1
+
+==MOVE PECA CASA 1 P/ CASA 25 (INEXISTENTE)
+=movepeca 1 1 24 5
+
+==QUANIIDADE PECA CASA INEXISTENTE
+=quantidadepeca 1 30 0 5
+
+==INSERE CASA INEXISTENTE
+=inserepeca 1 3 25 5
+
+==DELETA TABULEIRO
+=destroitabuleiro 1 0
+
+

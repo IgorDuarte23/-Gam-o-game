@@ -1,0 +1,164 @@
+// Script:    TesteLista.script
+// Autor:     Gabriel de Araujo Carvalho
+// Data:      27/09/2015
+// Propósito: Testar o módulo lista genérica duplamente encadeada completamente
+//
+
+== Inicializar valores
+=declararparm   lista0  int 0
+=declararparm   lista1  int 1
+=declararparm   lista2  int 2
+=declararparm   lista03 int 3
+=declararparm   lista04 int 4
+=declararparm   lista05 int 5
+=declararparm   lista06 int 6
+=declararparm   lista07 int 7
+
+=declararparm   str0    string  "abcdefg"
+=declararparm   str1    string  "qwerty"
+=declararparm   str2    string  "xxx"
+=declararparm   str3    string  "xpto"
+
+=declararparm   OK             int  0
+=declararparm   ListaVazia     int  1
+=declararparm   FimLista       int  2
+=declararparm   NaoAchou       int  3
+=declararparm   FaltouMemoria  int  4
+
+=declararparm   pNULL          int  0
+=declararparm   pNaoNULL       int  1
+
+== Criar a lista 0 e excluir elemento
+=criarlista      lista0 
+=excluirelem lista0
+=recuperar
+
+== Verificar ObterValor relativo a lista vazia
+=obtervalorelem  lista0   "???"     pNULL
+
+== Inserir elemento em lista vazia
+=inselemantes    lista0   str0   OK
+=obtervalorelem  lista0   str0   pNaoNULL
+
+== Inserir elemento após primeiro
+=inselemapos     lista0   str1   OK
+=obtervalorelem  lista0   str1   pNaoNULL
+
+== Inserir elemento antes do último
+=inselemantes    lista0   str2   OK
+=obtervalorelem  lista0   str2   pNaoNULL
+
+== Excluir elemento do meio
+=obtervalorelem  lista0   str2   pNaoNULL
+=excluirelem     lista0             OK
+
+== Excluir elemento do início
+=obtervalorelem  lista0   str0   pNaoNULL
+=excluirelem     lista0             OK
+
+== Excluir elemento final, único 
+=obtervalorelem  lista0   str1   pNaoNULL
+=excluirelem     lista0             OK
+
+== Ver se a lista ficou vazia
+=obtervalorelem  lista0   "???"     pNULL
+
+== Destruir a lista
+=destruirlista   lista0
+
+== Criar uma lista com dois elementos
+=criarlista      lista1 
+=inselemapos     lista1   str0   OK
+=inselemapos     lista1   str1   OK
+
+== Esvaziar a lista e ver se ficou vazia
+=esvaziarlista   lista1
+=obtervalorelem  lista1   "???"     pNULL
+
+== Destruir a lista
+=destruirlista   lista1
+
+== Criar uma lista com quatro elementos
+=criarlista      lista2 
+=inselemapos     lista2   str0   OK
+=inselemapos     lista2   str1   OK
+=inselemapos     lista2   str2   OK
+=inselemapos     lista2   str3   OK
+
+== Verificar a lista de trás para diante
+=obtervalorelem  lista2   str3   pNaoNULL
+=avancarelem     lista2   -1     OK
+=obtervalorelem  lista2   str2   pNaoNULL
+=avancarelem     lista2   -1     OK
+=obtervalorelem  lista2   str1   pNaoNULL
+=avancarelem     lista2   -1     OK
+=obtervalorelem  lista2   str0   pNaoNULL
+=avancarelem     lista2   -1     FimLista
+
+== Verificar a lista de frente para trás
+=obtervalorelem  lista2   str0   pNaoNULL
+=avancarelem     lista2   1      OK
+=obtervalorelem  lista2   str1   pNaoNULL
+=avancarelem     lista2   1      OK
+=obtervalorelem  lista2   str2   pNaoNULL
+=avancarelem     lista2   1      OK
+=obtervalorelem  lista2   str3   pNaoNULL
+=avancarelem     lista2   1      FimLista
+
+== Verificar a lista andando demais de trás para diante
+=avancarelem     lista2   -10     FimLista
+=obtervalorelem  lista2   str0   pNaoNULL
+
+== Verificar a lista andando demais de frente para trás
+=avancarelem     lista2   10     FimLista
+=obtervalorelem  lista2   str3   pNaoNULL
+
+== Destruir a lista
+=destruirlista   lista2
+
+==Cria lista vazia
+=criarlista	lista03
+
+==Avança elemento lista vazia
+=avancarelem lista03 1 ListaVazia
+
+==Cria lista com um elemento
+=criarlista	lista04
+=inselemapos lista04 str0 OK
+
+==Não avança
+=avancarelem lista04 0 OK
+
+==Destroi Lista
+=destruirlista lista04
+
+==Cria lista vazia
+=criarlista lista05
+
+==Procura valor na lista vazia
+=procuravalor lista05 str0 ListaVazia
+
+==Destroi lista
+=destruirlista lista05
+
+==Cria lista com um elemento
+=criarlista lista06
+=inselemapos lista06 str0 OK
+
+==Procura valor na lista e encontra
+=procuravalor lista06 str0 OK
+
+==Destroi lista
+=destruirlista lista06
+
+==Cria lista com um elemento
+=criarlista lista07
+=inselemapos lista07 str0 OK
+
+==Procura valor na lista e nao encontra
+=procuravalor lista07 str1 NaoAchou
+
+==Destroi lista
+=destruirlista lista07
+
+// fim

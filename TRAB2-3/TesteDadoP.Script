@@ -1,0 +1,67 @@
+// Script: TesteDado.script
+// Autor:  Igor Duarte Milanez Vieira
+// Data : 16/09/2015
+// Proposito: Testa a construcao e manipulacao do dado pontos, testando completamente
+// todas as possiveis e factiveis saidas de suas funcoes.
+
+==DOBRA VALOR SEM TER CRIADO DADO
+=dobravalor 1 1 3
+
+==EXCLUI SEM EXISTIR DADO
+=destruirdadop 1 3
+
+==OBTEM VALOR SEM TER CRIADO DADO
+=obtervalor 1 0 3
+
+== CRIAR DADO 1
+=criardadop 1 0
+
+== CRIAR DADO JA CRIADO
+=criardadop 1 1
+
+== EXCLUI DADO 
+=destruirdadop 1 0
+
+== CRIAR DADO DENOVO
+=criardadop 1 0
+
+== TENTA DOBRAR VALOR COM JOGADOR ERRADO
+=dobravalor 1 2 4
+
+== DOBRA VALOR 2
+=dobravalor 1 1 0
+
+== DOBRA VALOR 4
+=dobravalor 1 1 0
+
+==OBTEM VALOR
+=obtervalor 1 4 0
+
+== DOBRA VALOR 8
+=dobravalor 1 1 0
+
+== DOBRA VALOR 16
+=dobravalor 1 1 0
+
+== DOBRA VALOR 32
+=dobravalor 1 1 0
+
+== DOBRA VALOR 64
+=dobravalor 1 1 0
+
+== ERRO AO DOBRAR, VALOR MAXIMO
+=dobravalor 1 1 5
+
+==TESTAR COMANDO RECUPERAR
+=dobravalor 1 1 0
+=recuperar
+
+==DESTROI DADO
+=destruirdadop 1 0
+
+
+
+
+
+
+

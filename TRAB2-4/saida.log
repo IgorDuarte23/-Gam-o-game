@@ -1,0 +1,31 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: TRAB2-4
+!!!      Script de teste:     TesteDado.script
+
+!!!    0  Linha:     1  // Script: TesteDado.script 
+!!!    0  Linha:     2  // Autor:  Igor Duarte Milanez Vieira 
+!!!    0  Linha:     3  // Data : 15/09/2015 
+!!!    0  Linha:     4  // Proposito: Testa a construcao de um vetor de dados, testando completamente 
+!!!    0  Linha:     5  // todas as possiveis e factiveis saidas de suas funcoes. 
+    7  == tenta gerar valor em um dado que nao existe
+   10  == destruir dado que nao existe
+   13  == destruir dado que nao existe para testar recupar
+>>>    1  Linha:    14  Retorno errado Deveria ser: 0  É: 2
+<<<    0  Linha:    15  Falha esperada foi recuperada. 
+   17  == cria dado 1
+   20  == cria dado que ja existe
+   23  == gera valor no dado 1
+   26  == gera valor no dado 1 denovo
+   29  ==destroi dado 1
+   32  ==cria dado denovo para verificar se destruiu corretamente
+
+!!! Número de linhas lidas:          33
+!!! Número de casos de teste:         9
+!!! Número comandos corretos:         8
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0

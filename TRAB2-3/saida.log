@@ -1,0 +1,40 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: TRAB2-3
+!!!      Script de teste:     TesteDadoP.script
+
+!!!    0  Linha:     1  // Script: TesteDado.script 
+!!!    0  Linha:     2  // Autor:  Igor Duarte Milanez Vieira 
+!!!    0  Linha:     3  // Data : 16/09/2015 
+!!!    0  Linha:     4  // Proposito: Testa a construcao e manipulacao do dado pontos, testando completamente 
+!!!    0  Linha:     5  // todas as possiveis e factiveis saidas de suas funcoes. 
+    7  ==DOBRA VALOR SEM TER CRIADO DADO
+   10  ==EXCLUI SEM EXISTIR DADO
+   13  ==OBTEM VALOR SEM TER CRIADO DADO
+   16  == CRIAR DADO 1
+   19  == CRIAR DADO JA CRIADO
+   22  == EXCLUI DADO
+   25  == CRIAR DADO DENOVO
+   28  == TENTA DOBRAR VALOR COM JOGADOR ERRADO
+   31  == DOBRA VALOR 2
+   34  == DOBRA VALOR 4
+   37  ==OBTEM VALOR
+   40  == DOBRA VALOR 8
+   43  == DOBRA VALOR 16
+   46  == DOBRA VALOR 32
+   49  == DOBRA VALOR 64
+   52  == ERRO AO DOBRAR, VALOR MAXIMO
+   55  ==TESTAR COMANDO RECUPERAR
+>>>    1  Linha:    56  Condicao de retorno errada ao dobrar valor. Deveria ser: 0  É: 5
+<<<    0  Linha:    57  Falha esperada foi recuperada. 
+   59  ==DESTROI DADO
+
+!!! Número de linhas lidas:          67
+!!! Número de casos de teste:        18
+!!! Número comandos corretos:        17
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0

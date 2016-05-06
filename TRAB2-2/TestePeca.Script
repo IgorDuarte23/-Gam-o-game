@@ -1,0 +1,44 @@
+// Script: TestePeca.script
+// Autor:  Gabriel de Araujo Carvalho
+// Data : 16/09/2015
+// Proposito: Testa a construcao e manipulacao de um vetor de peças, testando completamente
+// todas as possiveis e factiveis saidas de suas, menos o retorno CondRetFaltoMemo, para o caso de faltar memória na
+// função CriarPeça.
+
+==Criar Peça OK
+=criarPEC 1 1 0
+
+==Criar Peça Ja Existente
+=criarPEC 1 1 3
+
+==Criar Peça Ja Existente Com Cor Diferente
+=criarPEC 1 0 3
+
+==Criar Peça Cor Invalida
+=criarPEC 2 4 4
+
+==Destroi Peça 1
+=destruirPEC 1 0
+
+==Destroi Peça 2
+=destruirPEC 2 0
+
+
+==Destroi Peça Nao Existente
+=destruirPEC 3 2
+
+==Obtem Cor Peça Nao Existe
+=obtercor 3 2
+
+==Cria Peça 4
+=criarPEC 4 1 0
+
+==Obter Cor da Peca 4
+=obtercor 4 0
+
+==Destruir Peca
+=destruirPEC 4 0
+
+==Testar Recuperar
+=destruirPEC 4 0
+=recuperar

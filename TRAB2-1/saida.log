@@ -1,0 +1,66 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: TRAB2-1
+!!!      Script de teste:     TesteTabuleiro.script
+
+!!!    0  Linha:     1  // Script: TesteTabuleiro.script 
+!!!    0  Linha:     2  // Autor:  Igor Duarte Milanez Vieira 
+!!!    0  Linha:     3  // Data : 21/09/2015 
+!!!    0  Linha:     4  // Proposito: Testa a construcao e manipulacao de Tabuleiro, testando completamente 
+!!!    0  Linha:     5  // todas as possiveis e factiveis saidas de suas, menos o retorno CondRetFaltoMemoria, para o caso de faltar memória na 
+!!!    0  Linha:     6  // função CriarTabuleiro. 
+    8  ==INSERE EM TABULEIRO INEXISTENTE
+   11  ==MOVE PECA TABULEIRO INEXISTENTE
+   14  ==retirapeca
+   17  ==QUANTIDADE PECA TABULEIRO INEXISTENTE
+   20  ==DESTROI TABULEIRO
+   23  ==CRIAR TABULEIRO
+   26  ==RETIRA CASA INEXISTENTE
+   29  ==RETIRA CASA VAZIA
+   32  ==CRIA JA EXISTENTE
+   35  ==DESTROI TABULEIRO
+   38  ==DESTROI INEXISTENTE
+   41  ==CRIA DENOVO
+   44  ==INSERE PECA 1 CASA 1
+   48  ==INSERE PECA 2 CASA 1
+   51  ==QUANTIDADE PECA ESPERADO ERRADA CASA 1 E TESTO RECUPERAR
+>>>    1  Linha:    52  numero de pecas errado Deveria ser: 3  É: 2
+<<<    0  Linha:    53  Falha esperada foi recuperada. 
+   55  ==INSERE PECA 3 CASA 1
+   58  ==INSERE PECA 4 CASA 1
+   61  ==INSERE PECA 5 CASA 1
+   64  ==INSERE PECA 6 CASA 1
+   67  ==INSERE PECA 7 CASA 1
+   70  ==INSERE PECA 1 CASA 2
+   73  ==INSERE PECA 2 CASA 2
+   76  ==RETIRA PECA 1 CASA 1 OK
+   79  ==QUANTIDADE PECA OK CASA 1 (6 PECAS)
+   82  ==RETIRA PECA 2 CASA 1 OK
+   85  ==QUANTIDADE PECA OK CASA 1 (5 PECAS)
+   88  ==QUANTIDADE PECA OK CASA 2 (2 PECAS)
+   91  ==RETIRAPECA PECA 2 CASA 2 OK
+   94  ==QUANTIDADE PECA OK CASA 2 (1 PECA)
+   97  ==RETIRAPECA PECA 1 CASA 2 OK
+  100  ==QUANTIDADE CASA VAZIA OK CASA 2
+  103  ==QUANTIDADE PECA CASA VAZIA
+  106  ==MOVE PECA CASA 1 P/ CASA 3
+  109  ==MOVE PECA CASA INEXISTENTE
+  112  ==QUANTIDADE PECA OK CASA 1 (4 PECAS)
+  115  ==QUANTIDADE PECA OK CASA 3 (1 PECA)
+  118  ==MOVE PECA CASA 3 P/ CASA 1
+  121  ==QUANTIDADE PECA OK CASA 1 (5 PECAS)
+  124  ==QUANTIDADE PECA CASA 3 VAZIA (0 PECA)
+  127  ==MOVE PECA CASA 1 P/ CASA 25 (INEXISTENTE)
+  130  ==QUANIIDADE PECA CASA INEXISTENTE
+  133  ==INSERE CASA INEXISTENTE
+  136  ==DELETA TABULEIRO
+
+!!! Número de linhas lidas:         139
+!!! Número de casos de teste:        43
+!!! Número comandos corretos:        42
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0

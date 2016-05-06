@@ -1,0 +1,57 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: trab2-5
+!!!      Script de teste:     TesteLista.script
+
+!!!    0  Linha:     1  // Script:    TesteLista.script 
+!!!    0  Linha:     2  // Autor:     Gabriel de Araujo Carvalho 
+!!!    0  Linha:     3  // Data:      27/09/2015 
+!!!    0  Linha:     4  // Propósito: Testar o módulo lista genérica duplamente encadeada completamente 
+!!!    0  Linha:     5  // 
+    7  == Inicializar valores
+   31  == Criar a lista 0 e excluir elemento
+>>>    1  Linha:    33  Erro nos parâmetros do comando:  =excluirelem lista0
+<<<    0  Linha:    34  Falha esperada foi recuperada. 
+   36  == Verificar ObterValor relativo a lista vazia
+   39  == Inserir elemento em lista vazia
+   43  == Inserir elemento após primeiro
+   47  == Inserir elemento antes do último
+   51  == Excluir elemento do meio
+   55  == Excluir elemento do início
+   59  == Excluir elemento final, único
+   63  == Ver se a lista ficou vazia
+   66  == Destruir a lista
+   69  == Criar uma lista com dois elementos
+   74  == Esvaziar a lista e ver se ficou vazia
+   78  == Destruir a lista
+   81  == Criar uma lista com quatro elementos
+   88  == Verificar a lista de trás para diante
+   98  == Verificar a lista de frente para trás
+  108  == Verificar a lista andando demais de trás para diante
+  112  == Verificar a lista andando demais de frente para trás
+  116  == Destruir a lista
+  119  ==Cria lista vazia
+  122  ==Avança elemento lista vazia
+  125  ==Cria lista com um elemento
+  129  ==Não avança
+  132  ==Destroi Lista
+  135  ==Cria lista vazia
+  138  ==Procura valor na lista vazia
+  141  ==Destroi lista
+  144  ==Cria lista com um elemento
+  148  ==Procura valor na lista e encontra
+  151  ==Destroi lista
+  154  ==Cria lista com um elemento
+  158  ==Procura valor na lista e nao encontra
+  161  ==Destroi lista
+!!!    0  Linha:   164  // fim 
+
+!!! Número de linhas lidas:         164
+!!! Número de casos de teste:        34
+!!! Número comandos corretos:        84
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0

@@ -1,0 +1,33 @@
+// Script: TesteDado.script
+// Autor:  Igor Duarte Milanez Vieira
+// Data : 15/09/2015
+// Proposito: Testa a construcao de um vetor de dados, testando completamente
+// todas as possiveis e factiveis saidas de suas funcoes.
+
+== tenta gerar valor em um dado que nao existe
+=gerarvalor 1 2
+
+== destruir dado que nao existe
+=destruirdado 1 2
+
+== destruir dado que nao existe para testar recupar
+=destruirdado 1 0
+=recuperar
+
+== cria dado 1
+=criardado 1 0
+
+== cria dado que ja existe
+=criardado 1 3
+
+== gera valor no dado 1
+=gerarvalor 1 0
+
+== gera valor no dado 1 denovo
+=gerarvalor 1 0
+
+==destroi dado 1
+=destruirdado 1 0
+
+==cria dado denovo para verificar se destruiu corretamente
+=criardado 1 0

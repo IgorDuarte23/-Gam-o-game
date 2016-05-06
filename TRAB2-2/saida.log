@@ -1,0 +1,35 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: TRAB2-2
+!!!      Script de teste:     TestePeca.script
+
+!!!    0  Linha:     1  // Script: TestePeca.script 
+!!!    0  Linha:     2  // Autor:  Gabriel de Araujo Carvalho 
+!!!    0  Linha:     3  // Data : 16/09/2015 
+!!!    0  Linha:     4  // Proposito: Testa a construcao e manipulacao de um vetor de peças, testando completamente 
+!!!    0  Linha:     5  // todas as possiveis e factiveis saidas de suas, menos o retorno CondRetFaltoMemo, para o caso de faltar memória na 
+!!!    0  Linha:     6  // função CriarPeça. 
+    8  ==Criar Peça OK
+   11  ==Criar Peça Ja Existente
+   14  ==Criar Peça Ja Existente Com Cor Diferente
+   17  ==Criar Peça Cor Invalida
+   20  ==Destroi Peça 1
+   23  ==Destroi Peça 2
+   27  ==Destroi Peça Nao Existente
+   30  ==Obtem Cor Peça Nao Existe
+   33  ==Cria Peça 4
+   36  ==Obter Cor da Peca 4
+   39  ==Destruir Peca
+   42  ==Testar Recuperar
+>>>    1  Linha:    43  Retorno errado Deveria ser: 0  É: 2
+<<<    0  Linha:    44  Falha esperada foi recuperada. 
+
+!!! Número de linhas lidas:          44
+!!! Número de casos de teste:        12
+!!! Número comandos corretos:        11
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0
