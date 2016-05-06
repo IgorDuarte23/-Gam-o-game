@@ -1,0 +1,39 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: TRAB3-3
+!!!      Script de teste:     TestePecasFinalizadas.script
+
+!!!    0  Linha:     1  // Script: TesteTabuleiro.script 
+!!!    0  Linha:     2  // Autor:  Igor Duarte Milanez Vieira 
+!!!    0  Linha:     3  // Data : 21/09/2015 
+!!!    0  Linha:     4  // Proposito: Testa a construcao e manipulacao de Tabuleiro, testando completamente 
+!!!    0  Linha:     5  // todas as possiveis e factiveis saidas de suas, menos o retorno CondRetFaltoMemoria, para o caso de faltar memória na 
+!!!    0  Linha:     6  // função CriarTabuleiro. 
+    8  ==CONTAR PECAS EM ESTRUTURA INEXISTENTE
+   11  ==INSERIR PECA EM ESTRUTURA INEXISTENTE
+   14  ==DESTROI ESTRUTURA INEXISTENTE
+   18  ==CRIA ESTRUTURA OK
+   21  ==CRIA JA EXISTENTE
+   24  ==DESTROI ESTRUTURA CRIADA OK
+   27  ==CRIA ESTRUTURA DENOVO
+   30  ==CONTAR PECAS OK
+   33  ==INSERIR PECA 1 JOGADOR 1 OK
+   36  ==INSERIR PECA 2 JOGADOR 1 OK
+   39  ==INSERIR PECA 1 JOGADOR 2 OK
+   42  ==INSERIR PECA 2 JOGADOR 2 OK
+   45  ==INSERIR PECA 3 JOGADOR 2 OK
+   48  ==INSERIR PECA COM JOGADOR INVALIDO
+   51  ==CONTAR PECAS JOGADOR 1 OK
+   55  ==CONTAR PECAS JOGADOR 1 ERRADO
+   58  ==CONTAR PECAS JOGADOR 2 OK
+   61  ==CONTAR PECAS JOGADOR 2 ERRADA
+
+!!! Número de linhas lidas:          62
+!!! Número de casos de teste:        18
+!!! Número comandos corretos:        18
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0
